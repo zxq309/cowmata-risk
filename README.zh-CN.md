@@ -7,7 +7,7 @@
 
 [![CI](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml/badge.svg)](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml)
 ![Documentation updated](https://img.shields.io/badge/docs-2026--09--07-0A7EA4)
-![Scope](https://img.shields.io/badge/private-research-92C142)
+![Scope](https://img.shields.io/badge/public-research-92C142)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [项目总览](https://github.com/zxq309/cowmata)
 
@@ -37,7 +37,7 @@ python -m pip install -r requirements-dev.txt
 python examples/calving_evidence_demo.py
 ```
 
-克隆需要 GitHub 仓库访问权限。模块最低支持 Python 3.8；CI 使用 Python 3.10 和 3.12。安装命令在仓库根目录执行。
+本仓库已公开，可直接克隆。模块最低支持 Python 3.8；CI 使用 Python 3.10 和 3.12。安装命令在仓库根目录执行。
 
 ## 如何理解演示
 

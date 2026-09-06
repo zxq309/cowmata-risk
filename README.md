@@ -7,7 +7,7 @@
 
 [![CI](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml/badge.svg)](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml)
 ![Documentation updated](https://img.shields.io/badge/docs-2026--09--07-0A7EA4)
-![Scope](https://img.shields.io/badge/private-research-92C142)
+![Scope](https://img.shields.io/badge/public-research-92C142)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [Project overview](https://github.com/zxq309/cowmata)
 
@@ -37,7 +37,7 @@ python -m pip install -r requirements-dev.txt
 python examples/calving_evidence_demo.py
 ```
 
-Authorized GitHub access is required to clone. Module minimum: Python 3.8; CI targets Python 3.10 and 3.12. Run all install commands from the repository root.
+The repository is public and can be cloned without authorization. Module minimum: Python 3.8; CI targets Python 3.10 and 3.12. Run all install commands from the repository root.
 
 ## Understand the demo
 
