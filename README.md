@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://www.cowmata.com/"><img src="assets/brand/cowmata-logo.svg" width="360" alt="COWMATA"></a>
+<img src="assets/brand/cowmata-logo.svg" width="360" alt="COWMATA">
 
 # COWMATA · Risk Decision Research
 
@@ -9,26 +9,21 @@
 ![Documentation updated](https://img.shields.io/badge/docs-2026--09--07-0A7EA4)
 ![Scope](https://img.shields.io/badge/private-research-92C142)
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [COWMATA](https://github.com/zxq309/cowmata)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Project overview](https://github.com/zxq309/cowmata)
 
 </div>
 
 ![Risk architecture](assets/figures/risk-en.svg)
 
-## Latest update
-
-**2026-09-07** — Bilingual guide, branded architecture, module cards, runnable evidence demo and explicit validation boundaries. [Full changelog](CHANGELOG.md). Module versions remain temperature **0.6.0** and activity **1.0.0**.
-
 ## What is available
 
-This private repository owns auxiliary evidence and downstream decision research. The current task is calving. Both imported modules run independently; calibrated fusion, ETA and a unified alert policy are not implemented.
+Run temperature and activity evidence modules for calving experiments. Both modules execute independently and return quality and freshness metadata. Calibrated fusion, ETA and a unified alert policy are not implemented.
 
 | Module | Input | Output | Entry |
 |---|---|---|---|
 | Temperature 0.6.0 | Bound packet, temperature and timing | Evidence score, grade, freshness weight | [Guide](docs/MODULES.en.md#temperature) |
 | Activity 1.0.0 | Bound V2 IMU packet | Activity ratio, baseline, coverage and evidence | [Guide](docs/MODULES.en.md#activity) |
 | Calving fusion | Future evidence + event adapter | Not implemented | [Integration](docs/INTEGRATION.en.md) |
-| Estrus / pregnancy / health | Future task-specific data | Planned | [Roadmap](docs/ROADMAP.md) |
 
 ## Quick start
 
@@ -84,13 +79,9 @@ assets/                brand and bilingual architecture
 data/                  local-data instructions; actual data stays outside Git
 ```
 
-## Related repositories
-
-| Repository | Responsibility |
-|---|---|
-| [cowmata](https://github.com/zxq309/cowmata) | System architecture, roadmap and demos |
-| [cowmata-tailring](https://github.com/zxq309/cowmata-tailring) | Behavior/event training, inference and evaluation |
-| [cowmata-risk](https://github.com/zxq309/cowmata-risk) | Decision research; private, authorized access |
-| [cattle-tail-ring-annotator](https://github.com/zxq309/cattle-tail-ring-annotator) | Annotation and human review |
 
 [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Notice](NOTICE)
+
+## Latest update
+
+**2026-09-07** — Focused this page on functionality, usage and validation; software and model versions are unchanged. [Full changelog](CHANGELOG.md).

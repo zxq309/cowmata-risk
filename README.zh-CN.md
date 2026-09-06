@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://www.cowmata.com/"><img src="assets/brand/cowmata-logo.svg" width="360" alt="COWMATA"></a>
+<img src="assets/brand/cowmata-logo.svg" width="360" alt="COWMATA">
 
 # COWMATA · 综合预警决策研究
 
@@ -9,26 +9,21 @@
 ![Documentation updated](https://img.shields.io/badge/docs-2026--09--07-0A7EA4)
 ![Scope](https://img.shields.io/badge/private-research-92C142)
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [COWMATA](https://github.com/zxq309/cowmata)
+[English](README.md) · [简体中文](README.zh-CN.md) · [项目总览](https://github.com/zxq309/cowmata)
 
 </div>
 
 ![Risk architecture](assets/figures/risk-zh.svg)
 
-## 最新更新
-
-**2026-09-07** — 完善双语说明、品牌框图、模块入口、可运行证据演示和验证边界。[完整更新记录](CHANGELOG.md)。模块版本保持温度 **0.6.0**、活动量 **1.0.0**。
-
 ## 已有能力
 
-本私有仓负责辅助证据与下游综合决策研究，当前主线为产犊。两个已导入模块可以独立运行；已标定融合概率、预计产犊时间和统一告警策略尚未实现。
+运行产犊实验中的温度与活动量证据模块，输出各自的证据、质量与时效信息。两个模块可独立执行；已标定融合概率、预计产犊时间和统一告警策略尚未实现。
 
 | 模块 | 输入 | 输出 | 入口 |
 |---|---|---|---|
 | 温度 0.6.0 | 已绑定数据包、温度及时间信息 | 证据评分、等级、时效权重 | [技术说明](modules/temperature/说明/技术说明.md) |
 | 活动量 1.0.0 | 已绑定 V2 IMU 数据包 | 活动比值、基线、覆盖与证据 | [技术说明](modules/activity/说明/技术说明.md) |
 | 产犊融合 | 待接入的多模态证据与行为事件 | 尚未实现 | [集成约定](docs/INTEGRATION.md) |
-| 发情／妊娠／健康 | 后续各任务数据 | 规划中 | [路线图](docs/ROADMAP.md) |
 
 ## 快速开始
 
@@ -84,13 +79,9 @@ assets/                brand and bilingual architecture
 data/                  local-data instructions; actual data stays outside Git
 ```
 
-## 关联仓库
-
-| 仓库 | 主要职责 |
-|---|---|
-| [cowmata](https://github.com/zxq309/cowmata) | 总体架构、路线图与演示 |
-| [cowmata-tailring](https://github.com/zxq309/cowmata-tailring) | 行为事件训练、推理与评估 |
-| [cowmata-risk](https://github.com/zxq309/cowmata-risk) | 综合决策研究；私有，需授权访问 |
-| [cattle-tail-ring-annotator](https://github.com/zxq309/cattle-tail-ring-annotator) | 人工标注与候选复核 |
 
 [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Notice](NOTICE)
+
+## 最新更新
+
+**2026-09-07** — 精简首页，集中呈现功能、使用与验证；软件及模型版本保持不变。[完整更新记录](CHANGELOG.md)。
