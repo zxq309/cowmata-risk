@@ -1,0 +1,7 @@
+{
+  "command": "python -X utf8 -m unittest discover -s tests -v",
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "test_source_sha256": "b9d183d0566b800f1e289be6bb3a82bf990343ed84246c26177fa686f5737db3"
+}

@@ -1,0 +1,20 @@
+{
+  "acc_counts_per_g": 4096.0,
+  "sample_rate_hz": 50,
+  "gravity_window_samples": 100,
+  "segment_gap_ms": 100,
+  "minimum_hour_coverage": 0.65,
+  "reference_minute_valid_seconds": 42.0,
+  "minimum_reference_elapsed_hours": 2.0,
+  "minimum_reference_valid_hours": 1.5,
+  "minimum_reference_minutes": 90,
+  "baseline_floor_g": 0.005,
+  "evidence_ratio": 1.5,
+  "strong_evidence_ratio": 2.0,
+  "episode_cooldown_minutes": 120.0,
+  "episode_reset_minutes": 120.0,
+  "maximum_observation_age_minutes": 90.0,
+  "history_retention_hours": 96,
+  "max_packet_duration_ms": 7200000,
+  "uid_retention_count": 2048
+}

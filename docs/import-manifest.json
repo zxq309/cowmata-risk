@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-07",
+  "description": "Hashes refer to the original import, before documentation path adjustments.",
+  "files": [
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/__init__.py",
+      "destination": "modules/temperature/cowmata_temperature_aux/__init__.py",
+      "sha256": "1be462c48d22ea203344f28f12f8ca982879743fbbd43e23d45153673b951d30"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/cooling.py",
+      "destination": "modules/temperature/cowmata_temperature_aux/cooling.py",
+      "sha256": "244b289c162161897afe7fac4f67116384b9243c5e99a56633f7d4aa75479716"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/engine.py",
+      "destination": "modules/temperature/cowmata_temperature_aux/engine.py",
+      "sha256": "7419c095acbaff46865df4421f9dc7d4f200105f9add0125813a0cd5fcd2d221"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/model.json",
+      "destination": "modules/temperature/cowmata_temperature_aux/model.json",
+      "sha256": "b78c7b5a3e4b949c1aff3f9861025fd39a025c8d6a59da8f122d9f61b2053254"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/output.schema.json",
+      "destination": "modules/temperature/cowmata_temperature_aux/output.schema.json",
+      "sha256": "faf3510effc50196c828ec129d4ea6a695a898ad276e629dab9629efb82a977d"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/cowmata_temperature_aux/protocol.py",
+      "destination": "modules/temperature/cowmata_temperature_aux/protocol.py",
+      "sha256": "0e2152ad9e14dd4f79c10bd8dbdc7a5dde92523cb984742923b05fc819a19799"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/README.md",
+      "destination": "modules/temperature/README.md",
+      "sha256": "d36f604c1758a23dce77673d0ef78b664b1a9b68b45376530e31b813a161f92f"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/setup.py",
+      "destination": "modules/temperature/setup.py",
+      "sha256": "821d06484b36b04bc2314c6a2517254c52e1fe4c0f20d77aa9d00a308018a704"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/示例/example.py",
+      "destination": "modules/temperature/示例/example.py",
+      "sha256": "ed88ebc6dec3d69665a3b9ee2c740352088c56ec410a9e9967184386d61a5d16"
+    },
+    {
+      "source": "综合决策20260906/温度决策模块/说明/技术说明.md",
+      "destination": "modules/temperature/说明/技术说明.md",
+      "sha256": "6846e297f80ac19af7f3c8a1cfb5c4f0cfe80a90c79f55c7a42b7c92d3084b94"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/cowmata_activity_aux/__init__.py",
+      "destination": "modules/activity/cowmata_activity_aux/__init__.py",
+      "sha256": "7f5ccfc18b96fc8c4ee07274049e6987c1d464ee432c362461e6048bf76ac707"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/cowmata_activity_aux/engine.py",
+      "destination": "modules/activity/cowmata_activity_aux/engine.py",
+      "sha256": "74f072cb4df7c543a34a80cf1163e850566778c8b2bc71ed6c797dafc0f312d1"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/cowmata_activity_aux/features.py",
+      "destination": "modules/activity/cowmata_activity_aux/features.py",
+      "sha256": "0093af3ad54655c3b13aae9a7b2e045b6786c6bebae33fa8caef864e21a03bf3"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/cowmata_activity_aux/output.schema.json",
+      "destination": "modules/activity/cowmata_activity_aux/output.schema.json",
+      "sha256": "422508619a31a9cd547e72ab7f9535406790a7c8d4101def39bf709b21a88560"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/cowmata_activity_aux/protocol.py",
+      "destination": "modules/activity/cowmata_activity_aux/protocol.py",
+      "sha256": "6cb2d1a3427a1e7f140af95aec3dd4dbec48fe91baed5762307690ee3d56b0aa"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/README.md",
+      "destination": "modules/activity/README.md",
+      "sha256": "4acb22c78e156676099d7630321f026f539aab667b66c9d140ed311f40a917d6"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/setup.py",
+      "destination": "modules/activity/setup.py",
+      "sha256": "d9cb597d504dc6504c6d251ff42df4de481ab9293d22f801dd72de373e6d5b5e"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/示例/config.example.json",
+      "destination": "modules/activity/示例/config.example.json",
+      "sha256": "095efc47cd82cfe1b55c18e0dead474c00bbc454a9c2ada7707a625152830729"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/示例/example.py",
+      "destination": "modules/activity/示例/example.py",
+      "sha256": "124955b2b385250405a7602e3751970162b3088830c8f0ff863391ded7ee0e65"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/说明/图表/活动量实测图_数据核对.json",
+      "destination": "modules/activity/说明/图表/活动量实测图_数据核对.json",
+      "sha256": "5a561ed4c84a2d3dac7bac958818bd4d4209fe8f5c5b23a2f2b51df006681a6c"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/说明/图表/活动量规律_全部牛实测证据.png",
+      "destination": "modules/activity/说明/图表/活动量规律_全部牛实测证据.png",
+      "sha256": "8c4365f8245b4ac450f2c5f6607e2482c3ccabeb9b5b3f56b42dc90500912343"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/说明/实测报告.md",
+      "destination": "modules/activity/说明/实测报告.md",
+      "sha256": "0655afacb4e0a8bac05d3d9dc381b1d63b5d9358dca08a8fb94ad747af67ad8b"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/说明/技术说明.md",
+      "destination": "modules/activity/说明/技术说明.md",
+      "sha256": "5071ec8030c6873066cb627cdd60082375a3c0217c2019204191b0af068a05ea"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/tests/test_activity.py",
+      "destination": "modules/activity/验证/tests/test_activity.py",
+      "sha256": "b9d183d0566b800f1e289be6bb3a82bf990343ed84246c26177fa686f5737db3"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/delivery_verification.json",
+      "destination": "modules/activity/验证/结果/delivery_verification.json",
+      "sha256": "ac3c51ef9c7780a8a38326ef55f259c746fbbfa68e730040b9c0fc1cfbe58c5c"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/unit_test_result.json",
+      "destination": "modules/activity/验证/结果/unit_test_result.json",
+      "sha256": "3b2561ebdce9c6d77f7c9ffbf4624e1b69687f48a4cf345b258da127765a9bc0"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/validation_summary.json",
+      "destination": "modules/activity/验证/结果/validation_summary.json",
+      "sha256": "242cbe90614c2bd40d77a2aec6039dd51e44a27ca5ebf0068d01cf45ed4b4390"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/原始包实测审计.csv",
+      "destination": "modules/activity/验证/结果/原始包实测审计.csv",
+      "sha256": "47a0da63192954a8344c2b18ba936e212359a44abc43a922e4e2e5cd88c4d368"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/逐包特征与决策.csv",
+      "destination": "modules/activity/验证/结果/逐包特征与决策.csv",
+      "sha256": "03e131cf3b11e582d27f0afa8325a08a8a6c48cade14334c7832177dd330250c"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/逐牛_强活动证据.csv",
+      "destination": "modules/activity/验证/结果/逐牛_强活动证据.csv",
+      "sha256": "ecd4f118d28dd5aed1d22b5e5970a0be6a3348a0445287a8725a13809fe69333"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/结果/逐牛_活动证据.csv",
+      "destination": "modules/activity/验证/结果/逐牛_活动证据.csv",
+      "sha256": "77051c616a190bafd25be9f612baff0b14acd2e5201eff7c6fd8245331fb6439"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/脚本/plot_empirical_evidence.py",
+      "destination": "modules/activity/验证/脚本/plot_empirical_evidence.py",
+      "sha256": "5366ead7dbd11c83a26c1a3df3dfeee492f5409c7af0b4e37b9184d25c0a4042"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/脚本/validate_real_data.py",
+      "destination": "modules/activity/验证/脚本/validate_real_data.py",
+      "sha256": "e001ed96b9ab8f242cda0259ce24ec7082e08072864a5845511dfc401ffafc99"
+    },
+    {
+      "source": "综合决策20260906/活动量决策模块/验证/脚本/verify_delivery.py",
+      "destination": "modules/activity/验证/脚本/verify_delivery.py",
+      "sha256": "425e07bc8871e961aa719980a41ab950c2d7150928873ea4ed0cb7f836b6a2ff"
+    }
+  ]
+}

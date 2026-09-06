@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.env
+data/*
+!data/README.md
+runs/
+**/状态快照/
+**/临时环境/
+*.sqlite3
+*.zip

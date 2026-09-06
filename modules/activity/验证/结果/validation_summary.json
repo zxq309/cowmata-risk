@@ -1,0 +1,46 @@
+{
+  "module_version": "1.0.0",
+  "data_source": "E:\\2-学术\\2-项目\\园上园项目\\牛尾环项目\\温度传感器专项算法\\正常数据",
+  "raw_files": 500,
+  "cows": 10,
+  "raw_frames": 88311001,
+  "valid_observed_hours": 474.7857333333339,
+  "runtime_seconds": 34.9158281,
+  "raw_hashes_match_previous_audit": true,
+  "feature_values_compared": 4500,
+  "feature_max_absolute_error": 8.79296635503124e-14,
+  "feature_differences": [],
+  "state_restore_checks": 112,
+  "snapshot_no_new_event_checks": 122,
+  "duplicate_packet_checks": 112,
+  "moderate_evidence": {
+    "cows": 10,
+    "early_hits": 8,
+    "eligible_cows": 10,
+    "late_hits": 0,
+    "background_alerts": 18,
+    "background_observed_hours": 217.77282777777776,
+    "background_alerts_per24_observed_hours": 1.9837185585009092
+  },
+  "strong_evidence": {
+    "cows": 10,
+    "early_hits": 5,
+    "eligible_cows": 10,
+    "late_hits": 0,
+    "background_alerts": 7,
+    "background_observed_hours": 217.77282777777776,
+    "background_alerts_per24_observed_hours": 0.7714461060836868
+  },
+  "definition": "new evidence events in [delivery-6h,hoof), using update_time as offline arrival proxy",
+  "limitations": [
+    "same 10 previously inspected calving cows; not an independent accuracy test",
+    "earlier-than-6h events per observed hour are a background burden proxy, not a healthy-control false-alarm rate",
+    "activity evidence alone; no calving probabilities; receipt timestamps are proxies"
+  ],
+  "code_sha256": {
+    "cowmata_activity_aux\\engine.py": "74f072cb4df7c543a34a80cf1163e850566778c8b2bc71ed6c797dafc0f312d1",
+    "cowmata_activity_aux\\features.py": "0093af3ad54655c3b13aae9a7b2e045b6786c6bebae33fa8caef864e21a03bf3",
+    "cowmata_activity_aux\\protocol.py": "6cb2d1a3427a1e7f140af95aec3dd4dbec48fe91baed5762307690ee3d56b0aa",
+    "cowmata_activity_aux\\__init__.py": "7f5ccfc18b96fc8c4ee07274049e6987c1d464ee432c362461e6048bf76ac707"
+  }
+}

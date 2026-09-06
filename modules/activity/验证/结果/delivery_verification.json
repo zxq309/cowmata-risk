@@ -1,0 +1,14 @@
+{
+  "schema_checked_outputs": 507,
+  "independent_install": {
+    "version": "1.0.0",
+    "import_path": "E:\\2-学术\\2-项目\\园上园项目\\牛尾环项目\\温度传感器专项算法\\20260906_活动量综合决策模块\\验证\\临时环境\\install_check\\cowmata_activity_aux\\__init__.py",
+    "raw_packet_accepted": true,
+    "state_restore": true
+  },
+  "cli": {
+    "first_raw_packet": true,
+    "restored_snapshot": true,
+    "wrong_binding_rejected_without_state_change": true
+  }
+}

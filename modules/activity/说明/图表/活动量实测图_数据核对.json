@@ -1,0 +1,82 @@
+{
+  "input_csv_sha256": "03e131cf3b11e582d27f0afa8325a08a8a6c48cade14334c7832177dd330250c",
+  "figure_cows": [
+    {
+      "cow_id": "21314",
+      "displayed_updates": 10,
+      "displayed_valid_ratios": 10,
+      "first_early_lead_hoof_minutes": 43.22631666666666
+    },
+    {
+      "cow_id": "22146",
+      "displayed_updates": 3,
+      "displayed_valid_ratios": 1,
+      "first_early_lead_hoof_minutes": null
+    },
+    {
+      "cow_id": "22225",
+      "displayed_updates": 11,
+      "displayed_valid_ratios": 11,
+      "first_early_lead_hoof_minutes": 5.6686833333333295
+    },
+    {
+      "cow_id": "22281",
+      "displayed_updates": 11,
+      "displayed_valid_ratios": 11,
+      "first_early_lead_hoof_minutes": 71.58
+    },
+    {
+      "cow_id": "23060",
+      "displayed_updates": 10,
+      "displayed_valid_ratios": 10,
+      "first_early_lead_hoof_minutes": 163.40006666666665
+    },
+    {
+      "cow_id": "23077",
+      "displayed_updates": 9,
+      "displayed_valid_ratios": 9,
+      "first_early_lead_hoof_minutes": 223.45136666666664
+    },
+    {
+      "cow_id": "23103",
+      "displayed_updates": 11,
+      "displayed_valid_ratios": 11,
+      "first_early_lead_hoof_minutes": 170.2934666666667
+    },
+    {
+      "cow_id": "23132",
+      "displayed_updates": 3,
+      "displayed_valid_ratios": 1,
+      "first_early_lead_hoof_minutes": null
+    },
+    {
+      "cow_id": "23158",
+      "displayed_updates": 10,
+      "displayed_valid_ratios": 10,
+      "first_early_lead_hoof_minutes": 178.51226666666668
+    },
+    {
+      "cow_id": "23263",
+      "displayed_updates": 8,
+      "displayed_valid_ratios": 6,
+      "first_early_lead_hoof_minutes": 159.54695
+    }
+  ],
+  "algorithm_unchanged": true,
+  "display_hours": [
+    -12,
+    0
+  ],
+  "target_window": "[delivery-6h,hoof)",
+  "ratio_threshold": 1.5,
+  "moderate_evidence": {
+    "cows": 10,
+    "early_hits": 8,
+    "eligible_cows": 10,
+    "late_hits": 0,
+    "background_alerts": 18,
+    "background_observed_hours": 217.77282777777776,
+    "background_alerts_per24_observed_hours": 1.9837185585009092
+  },
+  "notes": "all 10 cows shown; exact packet arrivals, no smoothing or invented points; same development cohort"
+}
