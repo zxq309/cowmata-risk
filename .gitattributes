@@ -1,0 +1,2 @@
+# Preserve imported delivery bytes, including original line endings and hashes.
+modules/** -text
