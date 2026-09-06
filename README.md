@@ -1,50 +1,96 @@
-# COWMATA Risk · 综合预警决策
+<div align="center">
+<a href="https://www.cowmata.com/"><img src="assets/brand/cowmata-logo.svg" width="360" alt="COWMATA"></a>
 
-牛只繁殖与健康监测的决策层。当前主线是产犊实验，已接入温度和活动量两个辅助证据模块。
+# COWMATA · Risk Decision Research
 
-| 组件 | 当前版本 | 能力与入口 |
-|---|---|---|
-| 温度辅助证据 | 0.6.0 | [模块说明](modules/temperature/README.md)：个体温度参照、持续温降、证据评分与时效权重 |
-| 活动量辅助证据 | 1.0.0 | [模块说明](modules/activity/README.md)：原始 V2 IMU 活动特征、动态基线、活动证据 |
-| 产犊融合 | 规划中 | [接入约定](docs/INTEGRATION.md)，尚未实现融合概率、预计时间或统一报警 |
-| 发情、妊娠、健康风险 | 规划中 | 后续在本仓按任务扩展，暂不建立空算法包 |
+**Traceable temperature and activity evidence for calving experiments.**
 
-本仓为私有实验仓。辅助证据不是独立产犊诊断；原始模型与参数保持导入版本，不在仓库整理中重新调参。
+[![CI](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml/badge.svg)](https://github.com/zxq309/cowmata-risk/actions/workflows/tests.yml)
+![Documentation updated](https://img.shields.io/badge/docs-2026--09--07-0A7EA4)
+![Scope](https://img.shields.io/badge/private-research-92C142)
 
-## 安装与验证
+[English](README.md) · [简体中文](README.zh-CN.md) · [COWMATA](https://github.com/zxq309/cowmata)
 
-在仓库根目录执行，建议使用独立虚拟环境：
+</div>
+
+![Risk architecture](assets/figures/risk-en.svg)
+
+## Latest update
+
+**2026-09-07** — Bilingual guide, branded architecture, module cards, runnable evidence demo and explicit validation boundaries. [Full changelog](CHANGELOG.md). Module versions remain temperature **0.6.0** and activity **1.0.0**.
+
+## What is available
+
+This private repository owns auxiliary evidence and downstream decision research. The current task is calving. Both imported modules run independently; calibrated fusion, ETA and a unified alert policy are not implemented.
+
+| Module | Input | Output | Entry |
+|---|---|---|---|
+| Temperature 0.6.0 | Bound packet, temperature and timing | Evidence score, grade, freshness weight | [Guide](docs/MODULES.en.md#temperature) |
+| Activity 1.0.0 | Bound V2 IMU packet | Activity ratio, baseline, coverage and evidence | [Guide](docs/MODULES.en.md#activity) |
+| Calving fusion | Future evidence + event adapter | Not implemented | [Integration](docs/INTEGRATION.en.md) |
+| Estrus / pregnancy / health | Future task-specific data | Planned | [Roadmap](docs/ROADMAP.md) |
+
+## Quick start
 
 ```sh
+git clone https://github.com/zxq309/cowmata-risk.git
+cd cowmata-risk
 python -m venv .venv
-# Windows PowerShell: .\.venv\Scripts\Activate.ps1
+# Windows: .\.venv\Scripts\Activate.ps1
 # Linux/macOS: source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
-python -m unittest discover -s modules/activity/验证/tests -v
-python -m unittest discover -s tests -v
 python examples/calving_evidence_demo.py
 ```
 
-两个模块原声明支持 Python >=3.8；仓库 CI 使用 Python 3.10 和 3.12。演示采用合成数据，展示真实模块的证据接口，不产生融合报警。
+Authorized GitHub access is required to clone. Module minimum: Python 3.8; CI targets Python 3.10 and 3.12. Run all install commands from the repository root.
 
-## 目录
+## Understand the demo
 
-```text
-modules/temperature/  温度包、参数、输出 schema、示例、技术说明
-modules/activity/     活动包、输出 schema、示例、既有测试与历史实验材料
-examples/             两模块接入演示
-tests/                安装后跨模块接口与状态恢复检查
-docs/                 集成约定、导入溯源、验证记录
-data/                 本地数据放置说明，实际数据不进入 Git
+```json
+{
+  "synthetic": true,
+  "fusion_implemented": false,
+  "temperature_quality": "ESTIMATE_UPDATED",
+  "activity_quality": "LOW_COVERAGE"
+}
 ```
 
-温度参数 `model.json` 是运行依赖，随包发布。训练集、原始包、数据库、视频和状态快照保留本地；历史实验结果与本次软件检查分别记录，详见 [数据说明](data/README.md) 和 [导入说明](docs/MIGRATION.md)。
+This excerpt comes from the synthetic V2 packet demo. The full output includes each module's fusion features. A short packet is insufficient to establish an activity baseline, so evidence remains unavailable. There is no predicted calving probability or fabricated alarm. See [the English module guide](docs/MODULES.en.md) for Python usage and timing semantics.
 
-## 四仓关系
+## Experimental evidence
 
-- [cowmata](https://github.com/zxq309/cowmata)：总体架构、路线图与版本组合。
-- [cowmata-tailring](https://github.com/zxq309/cowmata-tailring)：行为与事件模型训练、推理、评估。
-- [cowmata-risk](https://github.com/zxq309/cowmata-risk)：本仓，辅助证据与下游决策。
-- [cattle-tail-ring-annotator](https://github.com/zxq309/cattle-tail-ring-annotator)：人工标注、模型候选复核及导出。
+![Imported activity evidence](modules/activity/说明/图表/活动量规律_全部牛实测证据.png)
 
-本仓通过模块依赖或版本化数据交换使用其他组件，不复制识别算法或标注界面代码。
+**Historical exploratory figure**, imported with the activity module. The source report covers 10 cows and 500 packets and explicitly describes reproducibility on development data, not independent predictive accuracy. [Original report (Chinese)](modules/activity/说明/实测报告.md). The temperature validation directory referenced by the original delivery was not supplied; this repository does not claim to have rerun it.
+
+## Verify and integrate
+
+```sh
+python -m unittest discover -s modules/activity/验证/tests -v
+python -m unittest discover -s tests -v
+```
+
+Keep one state per cow/device binding, process sequentially, and distinguish collection, server receipt and evaluation times. Missing evidence is not negative evidence. Module schemas remain authoritative; see [integration](docs/INTEGRATION.en.md), [software verification](docs/VERIFICATION.md), [data access](data/README.md) and [import provenance](docs/MIGRATION.md).
+
+## Repository map
+
+```text
+modules/temperature/   temperature package, parameters, schema, original guide
+modules/activity/      activity package, schema, tests, historical experiments
+examples/              synthetic packet demo
+tests/                 installed-package integration checks
+docs/                  integration, evidence boundaries and provenance
+assets/                brand and bilingual architecture
+data/                  local-data instructions; actual data stays outside Git
+```
+
+## Related repositories
+
+| Repository | Responsibility |
+|---|---|
+| [cowmata](https://github.com/zxq309/cowmata) | System architecture, roadmap and demos |
+| [cowmata-tailring](https://github.com/zxq309/cowmata-tailring) | Behavior/event training, inference and evaluation |
+| [cowmata-risk](https://github.com/zxq309/cowmata-risk) | Decision research; private, authorized access |
+| [cattle-tail-ring-annotator](https://github.com/zxq309/cattle-tail-ring-annotator) | Annotation and human review |
+
+[Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Notice](NOTICE)

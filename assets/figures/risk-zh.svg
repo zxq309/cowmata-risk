@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">从可追溯辅助证据，推进产犊综合决策</title><desc id="desc">实线为当前组件流程，虚线为待实现集成；不表示融合告警已验证。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#59716b"/></marker><marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0a7ea4"/></marker><marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0a7ea4"/></marker></defs>
+<style>text{font-family:'Segoe UI','Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#17352e}.tag{font-size:12px;letter-spacing:1px;fill:#59716b}.sub{font-size:16px;fill:#59716b}.name{font-size:24px;font-weight:600}.path{fill:none;stroke:#59716b;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1200" height="680" fill="#f7faf8"/>
+<rect x="40" y="36" width="8" height="24" fill="#92c142"/>
+<text x="64" y="56" class="tag">COWMATA / RISK / 2026-09-07</text>
+<text x="40" y="104" font-size="32" font-weight="600">从可追溯辅助证据，推进产犊综合决策</text>
+<path d="M296 304 H336 Q344 304 344 296 V248 Q344 240 352 240 H392" class="path"/>
+<path d="M296 368 H328 Q336 368 336 376 V456 Q336 464 344 464 H392" class="path"/>
+<path d="M728 240 H768 Q776 240 776 248 V296 Q776 304 784 304 H824" class="path" stroke-dasharray="6 4"/>
+<path d="M728 464 H760 Q768 464 768 456 V376 Q768 368 776 368 H824" class="path" stroke-dasharray="6 4"/>
+<g><rect x="40" y="264" width="256" height="144" rx="8" fill="#ffffff" stroke="#b8ccc4" stroke-width="2"/><text x="60" y="292" class="tag">V2 PACKET</text><text x="60" y="328" class="name">已绑定传感数据</text><text x="60" y="356" class="sub">牛只 · 设备 · 绑定</text><text x="60" y="380" class="sub">接收时间与决策时间</text></g>
+<g><rect x="392" y="168" width="336" height="144" rx="8" fill="#edf7fa" stroke="#0a7ea4" stroke-width="2"/><text x="412" y="196" class="tag">TEMPERATURE / 0.6.0</text><text x="412" y="232" class="name">温度辅助证据</text><text x="412" y="260" class="sub">个体参照 · 持续温降</text><text x="412" y="284" class="sub">证据评分与时效权重</text></g>
+<g><rect x="392" y="392" width="336" height="144" rx="8" fill="#edf7fa" stroke="#0a7ea4" stroke-width="2"/><text x="412" y="420" class="tag">ACTIVITY / 1.0.0</text><text x="412" y="456" class="name">活动量辅助证据</text><text x="412" y="484" class="sub">动态基线 · 活动比值</text><text x="412" y="508" class="sub">观测覆盖与证据质量</text></g>
+<g><rect x="824" y="264" width="336" height="144" rx="8" fill="#ffffff" stroke="#b8ccc4" stroke-width="2" stroke-dasharray="6 4"/><text x="844" y="292" class="tag">NEXT / NOT IMPLEMENTED</text><text x="844" y="328" class="name">产犊融合决策</text><text x="844" y="356" class="sub">联合辅助证据与行为事件</text><text x="844" y="380" class="sub">标定并验证统一告警</text></g>
+<line x1="40" y1="616" x2="1160" y2="616" stroke="#cfddd7"/><text x="40" y="648" class="sub">实线：当前组件流程　·　虚线：待实现集成　·　辅助证据不等于已标定风险概率</text></svg>

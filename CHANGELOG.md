@@ -1,5 +1,11 @@
 # Changelog
 
+## Documentation presentation — 2026-09-07
+
+- Added English/Chinese landing pages, branded evidence architecture, English module guide and experimental-evidence navigation.
+- Kept auxiliary package versions and original runtime bytes unchanged.
+
+
 ## 2026-09-07 · repository initialization
 
 - 导入温度辅助模块 0.6.0 与活动量辅助模块 1.0.0，保留原算法和包接口。
